@@ -5,6 +5,6 @@ class StdNotification implements Notification
 {
     public function alertStatus(): void
     {
-        echo "Your connection is granted again from:" . time();
+        echo "Your connection is granted again from: " . date('d.m.Y - H:i', time());
     }
 }

@@ -15,9 +15,9 @@ class ConnectionCheck
 
     public function check(): void {
         if ($this->urlResponse->isOk() === false) {
-            self::check();
+            $this->check();
         } else {
-            $this->notification;
+            $this->notification->alertStatus();
         }
     }
 }
