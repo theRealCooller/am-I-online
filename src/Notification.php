@@ -3,5 +3,5 @@ declare(strict_types=1);
 
 interface Notification
 {
-    public function alertStatus(): void;
+    public function notify(): void;
 }
