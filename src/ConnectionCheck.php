@@ -1,7 +1,6 @@
 <?php
 declare(strict_types=1);
 
-
 class ConnectionCheck
 {
     private Notification $notification;
@@ -17,7 +16,7 @@ class ConnectionCheck
         if ($this->urlResponse->isOk() === false) {
             $this->check();
         } else {
-            $this->notification->alertStatus();
+            $this->notification->notify();
         }
     }
 }
